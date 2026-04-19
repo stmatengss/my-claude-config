@@ -1,22 +1,5 @@
 {
   "permissions": {
-    "allow": [
-      "Bash(git clone:*)",
-      "Bash(gh pr view https://github.com/sgl-project/sglang/pull/18637 --json title,body,files,additions,deletions,commits 2>/dev/null || echo \"gh not authenticated or unavailable\")",
-      "Bash(gh pr diff https://github.com/sgl-project/sglang/pull/18637 2>/dev/null)",
-      "Bash(gh pr view https://github.com/kvcache-ai/Mooncake/pull/1214 2>/dev/null || echo \"gh not authenticated, will use WebFetch\")",
-      "WebFetch(domain:github.com)",
-      "Bash(curl -s \"https://api.github.com/repos/kvcache-ai/Mooncake/pulls/1214\" 2>&1| head -100)",
-      "Bash(curl -s \"https://api.github.com/repos/kvcache-ai/Mooncake/pulls/1214/files\" 2>&1)",
-      "Bash(curl -s \"https://api.github.com/repos/kvcache-ai/Mooncake/pulls/1214/commits\" 2>&1 | python3 -c \"import json,sys; data=json.load\\(sys.stdin\\); [print\\(c['sha'][:8], c['commit']['message'].split\\('\\\\n'\\)[0]\\) for c in data]\")",
-      "Bash(curl -s \"https://api.github.com/repos/kvcache-ai/Mooncake/issues/1214/comments\" 2>&1 | python3 -c \"import json,sys; data=json.load\\(sys.stdin\\); [print\\('---\\\\nUser:', c['user']['login'], '\\\\nDate:', c['created_at'], '\\\\n', c['body'][:500]\\) for c in data]\")",
-      "Bash(curl -s \"https://api.github.com/repos/kvcache-ai/Mooncake/pulls/1214/reviews\" 2>&1 | python3 -c \"\nimport json,sys\ndata=json.load\\(sys.stdin\\)\nfor r in data:\n    print\\('---'\\)\n    print\\('User:', r['user']['login']\\)\n    print\\('State:', r['state']\\)\n    print\\('Date:', r['submitted_at']\\)\n    print\\('Body:', r['body'][:1000] if r['body'] else '\\(no body\\)'\\)\n    print\\(\\)\n\")",
-      "Bash(gh pr view https://github.com/kvcache-ai/Mooncake/pull/1499 --json title,body,files,additions,deletions,commits 2>/dev/null || echo \"gh not authenticated or unavailable\")",
-      "Bash(gh pr diff https://github.com/kvcache-ai/Mooncake/pull/1499 2>/dev/null | head -1000)",
-      "Bash(gh pr diff https://github.com/kvcache-ai/Mooncake/pull/1499 2>/dev/null | tail -n +1000 | head -800)",
-      "Bash(gh pr diff https://github.com/kvcache-ai/Mooncake/pull/1499 2>/dev/null | tail -n +1500)",
-      "Bash(cp /root/.claude/settings.json /root/mateng/my-claude/config/)",
-      "Bash(cp /root/.claude/settings.local.json /root/mateng/my-claude/config/)"
-    ]
+    "allow": []
   }
 }
