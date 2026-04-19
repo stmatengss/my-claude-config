@@ -68,13 +68,17 @@
       "Bash(git push:*)",
       "Bash(git pull:*)",
       "Bash(git clone:*)",
-      "Bash(gh:*)",
+      "Bash(gh pr:*)",
+      "Bash(gh issue:*)",
+      "Bash(gh repo view:*)",
       "Bash(aws:*)"
     ],
     "deny": [],
     "ask": [
       "Bash(rm:*)",
       "Bash(sudo:*)",
+      "Bash(gh repo delete:*)",
+      "Bash(gh secret delete:*)",
       "Bash(docker:*)",
       "Bash(kubectl:*)",
       "Bash(gcloud:*)",
