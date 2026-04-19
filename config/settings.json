@@ -1,0 +1,114 @@
+{
+  "permissions": {
+    "allow": [
+      "Read(//D:/*/git/gpu/**)",
+      "Edit(//D:/*/git/gpu/**)",
+      "WebSearch",
+      "WebFetch(domain:*)",
+      "Read",
+      "Write",
+      "Bash(opencode:*)",
+      "Bash(ls:*)",
+      "Bash(dir:*)",
+      "Bash(pwd:*)",
+      "Bash(find:*)",
+      "Bash(grep:*)",
+      "Bash(grep -E:*)",
+      "Bash(rg:*)",
+      "Bash(cat:*)",
+      "Bash(head:*)",
+      "Bash(tail:*)",
+      "Bash(wc:*)",
+      "Bash(sort:*)",
+      "Bash(uniq:*)",
+      "Bash(printf:*)",
+      "Bash(echo:*)",
+      "Bash(tree:*)",
+      "Bash(stat:*)",
+      "Bash(du:*)",
+      "Bash(which:*)",
+      "Bash(where:*)",
+      "Bash(mkdir:*)",
+      "Bash(touch:*)",
+      "Bash(chmod:*)",
+      "Bash(sed -n:*)",
+      "Bash(sed --posix -n:*)",
+      "Bash(sed -E -n:*)",
+      "Bash(sed -r -n:*)",
+      "Bash(sed-safe:*)",
+      "Bash(nl -ba)",
+      "Bash(git status:*)",
+      "Bash(git log:*)",
+      "Bash(git show:*)",
+      "Bash(git diff:*)",
+      "Bash(git grep:*)",
+      "Bash(git rev-parse:*)",
+      "Bash(git rev-list:*)",
+      "Bash(git ls-files:*)",
+      "Bash(git ls-tree:*)",
+      "Bash(git describe:*)",
+      "Bash(git blame:*)",
+      "Bash(git cat-file:*)",
+      "Bash(git check-ignore:*)",
+      "Bash(git config --local --get:*)",
+      "Bash(git remote -v:*)",
+      "Bash(git submodule status:*)",
+      "Bash(git submodule summary:*)",
+      "Bash(git ls-remote:*)",
+      "Bash(git fetch:*)",
+      "Bash(git branch:*)",
+      "Bash(git switch:*)",
+      "Bash(git checkout:*)",
+      "Bash(git restore:*)",
+      "Bash(git add:*)",
+      "Bash(git commit:*)",
+      "Bash(git stash:*)",
+      "Bash(git merge:*)",
+      "Bash(git rebase:*)",
+      "Bash(wget:*)",
+      "Bash(cp:*)",
+      "Bash(mv:*)",
+      "Bash(curl:*)",
+      "Bash(git -c core.editor=true rebase --continue)",
+      "Bash(aws:*)",
+      "Bash(git push:*)",
+      "Bash(git pull:*)"
+    ],
+    "deny": [],
+    "ask": [
+      "Bash(rm:*)",
+      "Bash(sudo:*)",
+      "Bash(docker:*)",
+      "Bash(kubectl:*)",
+      "Bash(gcloud:*)",
+      "Bash(az:*)"
+    ]
+  },
+  "statusLine": {
+    "type": "command",
+    "command": "bash -c 'plugin_dir=$(ls -d \"${CLAUDE_CONFIG_DIR:-$HOME/.claude}\"/plugins/cache/claude-hud/claude-hud/*/ 2>/dev/null | awk -F/ '\"'\"'{ print $(NF-1) \"\\t\" $(0) }'\"'\"' | sort -t. -k1,1n -k2,2n -k3,3n -k4,4n | tail -1 | cut -f2-); exec \"/usr/local/bin/node\" \"${plugin_dir}dist/index.js\"'"
+  },
+  "enabledPlugins": {
+    "code-review@claude-plugins-official": true,
+    "github@claude-plugins-official": true,
+    "coderabbit@claude-plugins-official": true,
+    "pua@pua-skills": true,
+    "skill-creator@claude-plugins-official": true,
+    "claude-hud@claude-hud": true,
+    "oh-my-claudecode@omc": true
+  },
+  "extraKnownMarketplaces": {
+    "claude-hud": {
+      "source": {
+        "source": "github",
+        "repo": "jarrodwatts/claude-hud"
+      }
+    },
+    "omc": {
+      "source": {
+        "source": "git",
+        "url": "https://github.com/Yeachan-Heo/oh-my-claudecode.git"
+      }
+    }
+  }
+}

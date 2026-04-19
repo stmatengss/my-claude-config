@@ -1,0 +1,71 @@
+{
+  "version": 2,
+  "plugins": {
+    "code-review@claude-plugins-official": [
+      {
+        "scope": "project",
+        "projectPath": "/root",
+        "installPath": "/root/.claude/plugins/cache/claude-plugins-official/code-review/bb7730114d87",
+        "version": "bb7730114d87",
+        "installedAt": "2026-02-16T08:49:29.525Z",
+        "lastUpdated": "2026-04-19T07:03:41.867Z",
+        "gitCommitSha": "2cd88e7947b7382e045666abee790c7f55f669f3"
+      }
+    ],
+    "github@claude-plugins-official": [
+      {
+        "scope": "project",
+        "projectPath": "/root",
+        "installPath": "/root/.claude/plugins/cache/claude-plugins-official/github/bb7730114d87",
+        "version": "bb7730114d87",
+        "installedAt": "2026-02-16T08:49:50.468Z",
+        "lastUpdated": "2026-04-19T07:03:41.865Z",
+        "gitCommitSha": "2cd88e7947b7382e045666abee790c7f55f669f3"
+      }
+    ],
+    "pua@pua-skills": [
+      {
+        "scope": "project",
+        "projectPath": "/root",
+        "installPath": "/root/.claude/plugins/cache/pua-skills/pua/3.2.1",
+        "version": "3.2.1",
+        "installedAt": "2026-03-23T05:46:35.569Z",
+        "lastUpdated": "2026-04-19T07:03:45.575Z",
+        "gitCommitSha": "5f433294a098aac4bdc96a1e098f0e33c9661242"
+      }
+    ],
+    "skill-creator@claude-plugins-official": [
+      {
+        "scope": "project",
+        "projectPath": "/root",
+        "installPath": "/root/.claude/plugins/cache/claude-plugins-official/skill-creator/bb7730114d87",
+        "version": "bb7730114d87",
+        "installedAt": "2026-03-23T05:48:51.931Z",
+        "lastUpdated": "2026-04-19T07:03:41.870Z",
+        "gitCommitSha": "61c0597779bd2d670dcd4fbbf37c66aa19eb2ce6"
+      }
+    ],
+    "claude-hud@claude-hud": [
+      {
+        "scope": "project",
+        "projectPath": "/root",
+        "installPath": "/root/.claude/plugins/cache/claude-hud/claude-hud/0.0.11",
+        "version": "0.0.11",
+        "installedAt": "2026-03-31T08:21:29.470Z",
+        "lastUpdated": "2026-04-19T04:54:08.009Z",
+        "gitCommitSha": "30e1dfe46ad7b9a39ca2a4df7c735aaa33a90fd9"
+      }
+    ],
+    "oh-my-claudecode@omc": [
+      {
+        "scope": "project",
+        "projectPath": "/root",
+        "installPath": "/root/.claude/plugins/cache/omc/oh-my-claudecode/4.11.0",
+        "version": "4.11.0",
+        "installedAt": "2026-04-07T14:34:47.608Z",
+        "lastUpdated": "2026-04-19T04:54:08.009Z",
+        "gitCommitSha": "feaddbfc52b27693225cc3fc56ee69665b7927a3"
+      }
+    ]
+  }
+}
