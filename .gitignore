@@ -16,3 +16,6 @@ Thumbs.db
 # 备份文件
 *.bak
 *.backup
+
+# Claude/OMC runtime state
+.omc/state/
