@@ -96,7 +96,8 @@
     "pua@pua-skills": true,
     "skill-creator@claude-plugins-official": true,
     "claude-hud@claude-hud": true,
-    "oh-my-claudecode@omc": true
+    "oh-my-claudecode@omc": true,
+    "andrej-karpathy-skills@karpathy-skills": true
   },
   "extraKnownMarketplaces": {
     "claude-hud": {
@@ -109,6 +110,12 @@
       "source": {
         "source": "git",
         "url": "https://github.com/Yeachan-Heo/oh-my-claudecode.git"
+      }
+    },
+    "karpathy-skills": {
+      "source": {
+        "source": "github",
+        "repo": "multica-ai/andrej-karpathy-skills"
       }
     }
   }
